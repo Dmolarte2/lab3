@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-    <title>CodeIgniter Tutorial</title>
+
+    <title>Daniel Olarte's Website</title>
 </head>
 <body>
 
-    <h1><?= esc($title) ?></h1>
