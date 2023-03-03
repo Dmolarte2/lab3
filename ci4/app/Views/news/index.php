@@ -34,7 +34,7 @@
 
     <?php endforeach ?>
 
-    <a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news/create" style="font-size:20px">Create News</a></p>
+    <a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news/create" style="font-size:20px">~~~Create News~~~</a></p>
 
 <?php else: ?>
 
