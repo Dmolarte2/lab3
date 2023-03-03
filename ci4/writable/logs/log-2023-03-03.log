@@ -154,3 +154,15 @@ INFO - 2023-03-03 08:51:00 --> CSRF token verified.
 INFO - 2023-03-03 08:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-03-03 08:51:44 --> CSRF token verified.
 INFO - 2023-03-03 08:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-03 09:38:28 --> mysqli::__construct(): (HY000/2002): A socket operation was attempted to an unreachable network
+in APPPATH\Views\pages\guests.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::__construct(): (HY000/2002): A socket operation was attempted to an unreachable network', 'APPPATH\\Views\\pages\\guests.php', 20)
+ 2 APPPATH\Views\pages\guests.php(20): mysqli->__construct('192.168.150.213', 'webprogmi212', 'b3ntRhino98', 'webprogmi212')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\guests.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('pages/guests', [], true)
+ 6 APPPATH\Controllers\Pages.php(22): view('pages/guests')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guests')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
