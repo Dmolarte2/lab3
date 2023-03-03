@@ -23,7 +23,7 @@ a.ex3:hover, a.ex2:active {font-size: 110%;}
   <div class="w3-content w3-justify w3-padding-64" id="about">
 	
     <p style="float:right;font-size:18px;cursor: help"> 
-	<a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab2/week5/MyProfile/index.html">Go back to home</a></p>
+	<a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/index">Go back to home</a></p>
 	
 	
 	
