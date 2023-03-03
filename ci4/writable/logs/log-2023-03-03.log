@@ -178,3 +178,627 @@ in APPPATH\Views\pages\guests.php on line 19.
  8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
  9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:13:02 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH\Controllers\Guest.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Guest.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Guest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Guest')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Guest', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-03 16:20:06 --> mysqli_sql_exception: Table 'webprogmi212.dmolarte2_news' doesn't exist in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab3\ci4\app\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab3\ci4\app\Controllers\News.php(13): App\Models\NewsModel->getNews()
+#8 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\News->index()
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-03 16:20:06 --> Table 'webprogmi212.dmolarte2_news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dmolarte2_news`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\News.php(13): App\Models\NewsModel->getNews()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-03 16:20:06 --> mysqli_sql_exception: Table 'webprogmi212.dmolarte2_news' doesn't exist in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab3\ci4\app\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab3\ci4\app\Controllers\News.php(13): App\Models\NewsModel->getNews()
+#8 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\News->index()
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-03 16:20:06 --> Table 'webprogmi212.dmolarte2_news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dmolarte2_news`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\News.php(13): App\Models\NewsModel->getNews()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:20:24 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:20:35 --> mysqli::__construct(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\pages\guests.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::__construct(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', 'APPPATH\\Views\\pages\\guests.php', 19)
+ 2 APPPATH\Views\pages\guests.php(19): mysqli->__construct('192.168.150.213', 'webprogmi212', 'b3ntRhino98', 'webprogmi212')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\guests.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('pages/guests', [], true)
+ 6 APPPATH\Controllers\Pages.php(22): view('pages/guests')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guests')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:05 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:06 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:06 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:07 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:07 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:07 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:07 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:07 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:07 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:08 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:21:08 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:27:09 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:27:26 --> mysqli::__construct(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\pages\guests.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::__construct(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', 'APPPATH\\Views\\pages\\guests.php', 19)
+ 2 APPPATH\Views\pages\guests.php(19): mysqli->__construct('192.168.150.213', 'webprogmi212', 'b3ntRhino98', 'webprogmi212')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\guests.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('pages/guests', [], true)
+ 6 APPPATH\Controllers\Pages.php(22): view('pages/guests')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guests')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:31:07 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:31:08 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-03 16:31:12 --> mysqli_sql_exception: Table 'webprogmi212.dmolarte2_news' doesn't exist in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab3\ci4\app\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab3\ci4\app\Controllers\News.php(13): App\Models\NewsModel->getNews()
+#8 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\News->index()
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-03 16:31:12 --> Table 'webprogmi212.dmolarte2_news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dmolarte2_news`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\News.php(13): App\Models\NewsModel->getNews()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-03 16:31:12 --> mysqli_sql_exception: Table 'webprogmi212.dmolarte2_news' doesn't exist in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab3\ci4\app\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab3\ci4\app\Controllers\News.php(13): App\Models\NewsModel->getNews()
+#8 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\News->index()
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-03 16:31:12 --> Table 'webprogmi212.dmolarte2_news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dmolarte2_news`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\News.php(13): App\Models\NewsModel->getNews()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:31:20 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH\Controllers\Pages.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guest')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:31:37 --> mysqli::__construct(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\pages\guests.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::__construct(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', 'APPPATH\\Views\\pages\\guests.php', 19)
+ 2 APPPATH\Views\pages\guests.php(19): mysqli->__construct('192.168.150.213', 'webprogmi212', 'b3ntRhino98', 'webprogmi212')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\guests.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('pages/guests', [], true)
+ 6 APPPATH\Controllers\Pages.php(22): view('pages/guests')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('guests')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:34:58 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Guest.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Guest.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Guest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Guest')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Guest', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 16:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-03 16:40:15 --> mysqli_sql_exception: Table 'webprogmi212.dmolarte2_news' doesn't exist in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab3\ci4\app\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab3\ci4\app\Controllers\News.php(13): App\Models\NewsModel->getNews()
+#8 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\News->index()
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-03 16:40:15 --> Table 'webprogmi212.dmolarte2_news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dmolarte2_news`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\News.php(13): App\Models\NewsModel->getNews()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 16:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-03 16:41:53 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Guest.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Guest.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Guest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Guest')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Guest', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:41:58 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Guest.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Guest.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Guest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Guest')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Guest', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 16:57:31 --> Unmatched '}'
+in APPPATH\Controllers\Guest.php on line 69.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Guest.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Guest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Guest')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Guest', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 16:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:58:07 --> CSRF token verified.
+CRITICAL - 2023-03-03 16:58:07 --> syntax error, unexpected token "}"
+in APPPATH\Models\GuestModel.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\GuestModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\GuestModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\GuestModel')
+ 4 SYSTEMPATH\Config\Factories.php(155): class_exists('App\\Models\\GuestModel')
+ 5 SYSTEMPATH\Config\Factories.php(125): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\GuestModel')
+ 6 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH\Common.php(818): CodeIgniter\Config\Factories::models('App\\Models\\GuestModel', [...], null)
+ 8 APPPATH\Controllers\Guest.php(52): model('App\\Models\\GuestModel')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guest->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 16:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:58:58 --> CSRF token verified.
+CRITICAL - 2023-03-03 16:58:58 --> syntax error, unexpected token "}"
+in APPPATH\Models\GuestModel.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\GuestModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\GuestModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\GuestModel')
+ 4 SYSTEMPATH\Config\Factories.php(155): class_exists('App\\Models\\GuestModel')
+ 5 SYSTEMPATH\Config\Factories.php(125): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\GuestModel')
+ 6 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH\Common.php(818): CodeIgniter\Config\Factories::models('App\\Models\\GuestModel', [...], null)
+ 8 APPPATH\Controllers\Guest.php(52): model('App\\Models\\GuestModel')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guest->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 16:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 16:59:20 --> CSRF token verified.
+ERROR - 2023-03-03 16:59:20 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `gu...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `gu...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `gu...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `gu...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\lab3\ci4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\lab3\ci4\app\Controllers\Guest.php(59): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\Guest->create()
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+#11 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-03 16:59:20 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `guest` (`name`, `email`, `website`, `comment`, `gender`) VALUES (:name:, :email:, :website:, :comment:, :gender:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Guest.php(59): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guest->create()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 16:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 17:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 17:02:13 --> CSRF token verified.
+ERROR - 2023-03-03 17:02:13 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `gu...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `gu...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `gu...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `gu...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\lab3\ci4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\lab3\ci4\app\Controllers\Guest.php(59): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\Guest->create()
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+#11 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-03 17:02:13 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `guest` (`name`, `email`, `website`, `comment`, `gender`) VALUES (:name:, :email:, :website:, :comment:, :gender:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Guest.php(59): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guest->create()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 17:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 17:05:28 --> CSRF token verified.
+ERROR - 2023-03-03 17:05:28 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `gu...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `gu...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `gu...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `gu...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\lab3\ci4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\lab3\ci4\app\Controllers\Guest.php(59): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\Guest->create()
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+#11 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-03 17:05:28 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `guest` (`name`, `email`, `website`, `comment`, `gender`) VALUES (:name:, :email:, :website:, :comment:, :gender:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Guest.php(59): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guest->create()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 17:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 17:05:42 --> CSRF token verified.
+ERROR - 2023-03-03 17:05:42 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `gu...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `gu...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `gu...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `gu...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\lab3\ci4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\lab3\ci4\app\Controllers\Guest.php(59): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\Guest->create()
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+#11 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-03 17:05:42 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `guest` (`name`, `email`, `website`, `comment`, `gender`) VALUES (:name:, :email:, :website:, :comment:, :gender:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Guest.php(59): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guest->create()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 17:11:40 --> CSRF token verified.
+INFO - 2023-03-03 17:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 17:12:07 --> CSRF token verified.
+INFO - 2023-03-03 17:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 17:12:10 --> CSRF token verified.
+ERROR - 2023-03-03 17:32:50 --> mysqli_sql_exception: Table 'webprogmi212.dmolarte2_news' doesn't exist in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab3\ci4\app\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab3\ci4\app\Controllers\News.php(13): App\Models\NewsModel->getNews()
+#8 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\News->index()
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-03 17:32:50 --> Table 'webprogmi212.dmolarte2_news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dmolarte2_news`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\News.php(13): App\Models\NewsModel->getNews()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-03 17:32:50 --> mysqli_sql_exception: Table 'webprogmi212.dmolarte2_news' doesn't exist in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab3\ci4\app\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab3\ci4\app\Controllers\News.php(13): App\Models\NewsModel->getNews()
+#8 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\News->index()
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-03 17:32:50 --> Table 'webprogmi212.dmolarte2_news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dmolarte2_news`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\News.php(13): App\Models\NewsModel->getNews()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 17:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-03 17:43:19 --> Undefined variable $news_item
+in APPPATH\Views\guest\index.php on line 29.
+ 1 APPPATH\Views\guest\index.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $news_item', 'APPPATH\\Views\\guest\\index.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\guest\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('guest/index', [], true)
+ 5 APPPATH\Controllers\Guest.php(20): view('guest/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guest->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 17:44:03 --> Unsupported operand types: string + string
+in APPPATH\Views\guest\index.php on line 30.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('guest/index', [], true)
+ 4 APPPATH\Controllers\Guest.php(20): view('guest/index')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guest->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 17:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 17:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 17:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-03 17:57:02 --> mysqli_sql_exception: Table 'webprogmi212.dmolarte2_news' doesn't exist in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab3\ci4\app\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab3\ci4\app\Controllers\News.php(13): App\Models\NewsModel->getNews()
+#8 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\News->index()
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-03 17:57:02 --> Table 'webprogmi212.dmolarte2_news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dmolarte2_news`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\News.php(13): App\Models\NewsModel->getNews()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-03 17:57:03 --> mysqli_sql_exception: Table 'webprogmi212.dmolarte2_news' doesn't exist in C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\lab3\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab3\ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab3\ci4\app\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab3\ci4\app\Controllers\News.php(13): App\Models\NewsModel->getNews()
+#8 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\News->index()
+#9 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\xampp\htdocs\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-03 17:57:03 --> Table 'webprogmi212.dmolarte2_news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dmolarte2_news`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\News.php(13): App\Models\NewsModel->getNews()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-03 17:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 18:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 18:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 18:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 18:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 18:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 18:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 18:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-03 18:04:07 --> CSRF token verified.

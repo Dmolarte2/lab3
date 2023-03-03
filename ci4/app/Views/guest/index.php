@@ -17,26 +17,49 @@
 <p style="float:right;font-size:18px;cursor:help;padding-right:30px"> 
 	<a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/index">Go back to home</a></p>
 
-<h2><?= esc($title) ?></h2>
+<h1>Lists of Feedback</h1>
 
-<hr style="height:2px;border-width:0;color:gray;background-color:#0F0F0F;width:350px;paddingt-top:0px">
+<hr style="height:2px;border-width:0;color:gray;background-color:#0F0F0F;width:800px;margin-bottom:50px">
 
 <?php if (! empty($guest) && is_array($guest)): ?>
 
     <?php foreach ($guest as $guest_item): ?>
 
-        <div class="main">
-        <h3><?= esc($guest_item['name']) ?></h3>
-            <p><?= esc($guest_item['email']) ?></p>
-            <p><?= esc($guest_item['comment']) ?></p>
+        <div class="main" style= "padding-bottom:10px">
+		<h3><b><?= esc($guest_item['name']) ?></b></h3>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#0F0F0F;width:100px">
+        <table>
+		<tr>
+        <th>- </th>
+        <th><p><?= esc($guest_item['comment']) ?></p></th>
+        </tr>
+		</table>
+        <table>
+		<tr>
+        <th>Gender:   </th>
+        <th><p><?= esc($guest_item['gender']) ?></p></th>
+        </tr>
+		</table>
+        <table>
+		<tr>
+        <th>Email:   </th>
+        <th><p><?= esc($guest_item['email']) ?></p></th>
+        </tr>
+		</table>
+        <table>
+		<tr>
+        <th>Website:   </th>
+        <th><p><?= esc($guest_item['website']) ?></p></th>
+        </tr>
+		</table>
         </div>
     <?php endforeach ?>
 
+    <a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create" style="font-size:20px;padding-bottom:150px">~~~Add Another Feedback~~~</a></p>
+
 <?php else: ?>
-
-    <h3>No Feedback</h3>
-
-    <p>Unable to find any Feedback for you.</p>
+    <h3>No guest</h3>
+    <p>Unable to find any guest for you.</p>
 
 <?php endif ?>
 

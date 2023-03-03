@@ -144,7 +144,7 @@ PI = PI + 10;   // This will also give an error
 
     <div class=" w3-content" id="contact">
     <h2 style="font-color:#0F0F0F;">News Section</h2>
-    <hr style="height:2px;border-width:0;width:400px;color:gray;background-color:#0F0F0F">
+    <hr style="height:2px;border-width:0;width:200px;color:gray;background-color:#0F0F0F">
 
     <div>
 	
@@ -156,9 +156,26 @@ PI = PI + 10;   // This will also give an error
 
   </div>
 
+  <div class=" w3-content" id="contact" style= "margin-top:0px">
+    <h2 style="font-color:#0F0F0F;">Feedback to the website</h2>
+    <hr style="height:2px;border-width:0;width:200px;color:gray;background-color:#0F0F0F">
+
+    <div>
+	
+		<p ><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create"><i class="fa fa-pencil w3-hover-opacity w3-margin-right"></i> </a><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create" style="font-color:#363636" >Write Feedback</a></p>
+		<p><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest"><i class="fa fa-eye w3-hover-opacity w3-margin-right"></i> </a> <a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest">View Feedbacks</a></p>
+
+    
+    </div><br>
+    
+
+  </div>
+  
+
     <div class=" w3-content" id="contact">
+    <hr style="height:2px;border-width:0;width:100%;color:gray;background-color:#0F0F0F;margin-top:120px">
     <h2 style="font-color:#0F0F0F;">Contact Me</h2>
-    <hr style="height:2px;border-width:0;width:400px;color:gray;background-color:#0F0F0F">
+    <hr style="height:2px;border-width:0;width:100%;color:gray;background-color:#0F0F0F">
 
     <div>
 	
@@ -166,153 +183,15 @@ PI = PI + 10;   // This will also give an error
 		<p><a href="https://www.instagram.com/daniel.lrt/?hl=en"><i class="fa fa-instagram w3-hover-opacity w3-margin-right"></i> </a> <a href="https://www.instagram.com/daniel.lrt/?hl=en">@daniel.lrt</a></p>
 		<p><a href="https://www.linkedin.com/in/daniel-olarte-a3290318b/"><i class="fa fa-linkedin w3-hover-opacity w3-margin-right"></i> </a> <a href="https://www.linkedin.com/in/daniel-olarte-a3290318b/"> Daniel Olarte</a></p>
     
-    </div><br>
+    </div>
     
 
   </div>
 
+  </div>
 
-<?php
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-    
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL";
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-    
-  <h2>Website Feedback</h2>
-  <hr style="height:2px;border-width:0;width:60%px;color:gray;background-color:#0F0F0F">
-  <p><span class="error">* required field</span></p>
-
-  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-    Name: <input type="text" name="name" value="<?php echo $name;?>">
-    <span class="error">* <?php echo $nameErr;?></span>
-    <br><br>
-    E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-    <span class="error">* <?php echo $emailErr;?></span>
-    <br><br>
-    Website: <input type="text" name="website" value="<?php echo $website;?>">
-    <span class="error"><?php echo $websiteErr;?></span>
-    <br><br>
-    Feedback: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-    <br><br>
-    Gender:
-    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
-    <span class="error">* <?php echo $genderErr;?></span>
-    <br><br>
-    <input type="submit" name="submit" value="Submit">  
-  </form>
-
-<?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-?>
-     
-<?php
-  if ($_SERVER["REQUEST_METHOD"] == "POST") 
-  {
-    $servername = "192.168.150.213";
-    $username = "webprogmi212";
-    $password = "b3ntRhino98";
-    $dbname = "webprogmi212";
-    
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-
-    // sql to create table
-    $sql = "CREATE TABLE dmolarte2_MyGuestss (
-      name VARCHAR(30) NOT NULL,
-      email VARCHAR(50) NOT NULL,
-      website VARCHAR(30),
-      comment TEXT(500),
-      gender VARCHAR(10) NOT NULL
-      )";
-      
-    if ($conn->query($sql) === TRUE) {
-      echo "Table dmolarte2_MyGuestss created successfully";
-    } else {
-      echo "Error creating table: " . $conn->error;
-    }
-    
-    $sql = "INSERT INTO dmolarte2_MyGuestss (name, email, website, comment, gender)
-    VALUES ('$name', '$email', '$website', '$comment', '$gender')";
-    
-    if ($conn->query($sql) === TRUE) {
-      echo "New record created successfully";
-    } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-    
-    $conn->close();
-  }
-
-?>        
-     
     <!-- baba -->
-  <footer class="w3-content w3-padding-64 w3-xlarge">
+  <footer class="w3-content  w3-xlarge">
     <hr style="height:2px;border-width:0;color:gray;background-color:#0F0F0F">
     <p class="w3-medium">Powered by <a  target="_blank" >Yours trulyw3</a></p>
   </footer>
