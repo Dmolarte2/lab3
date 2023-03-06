@@ -37,7 +37,7 @@
     <input style="margin-top:40px;margin-bottom:10px" type="submit" name="submit" value="Create news item">
 </form>
 
-<hr style="height:2px;border-width:0;color:gray;background-color:#0F0F0F;width:200px;padding-top:15px">
+<hr style="height:2px;border-width:0;color:gray;background-color:#0F0F0F;width:200px;margin-top:15px">
 <p><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news"><i class="fa fa-book w3-hover-opacity w3-margin-right"></i> </a> <a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news">View News Archive</a></p>
 
 </body>
