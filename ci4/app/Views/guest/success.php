@@ -17,10 +17,11 @@
 	<a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/index">Go back to home</a></p>
 
 <p style="font-size:30px">Feedback created successfully.</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:#0F0F0F;width:400px;margin-top:15px">
 
-<a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create">Submit Another Feedback</a></p>
-<a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest">View Website Feedback</a></p>
-
+		<p ><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create"><i class="fa fa-pencil w3-hover-opacity w3-margin-right"></i> </a><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create" style="font-color:#363636" >Write Another Feedback</a></p>
+		<p><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest"><i class="fa fa-eye w3-hover-opacity w3-margin-right"></i> </a> <a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest">View List of Feedback</a></p>
+    
 </body>
 </html>
 

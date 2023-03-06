@@ -55,7 +55,7 @@
         </div>
     <?php endforeach ?>
 
-    <a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create" style="font-size:20px;padding-bottom:150px">~~~Add Another Feedback~~~</a></p>
+    <a a class="ex3" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create" style="font-size:20px;padding-top:25px">~~~Add Another Feedback~~~</a></p>
 
 <?php else: ?>
     <h3>No guest</h3>
