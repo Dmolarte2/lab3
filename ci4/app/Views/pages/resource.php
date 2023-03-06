@@ -46,6 +46,10 @@ a.ex3:hover, a.ex2:active {font-size: 110%;}
 	<h3 style="font-color:#0F0F0F;">Web Stylesheet :</h3>
     <p style="font-color:#363636"><a a class="ex2" href="https://fonts.googleapis.com/css?family=Montserrat" >- Googleapis</a></p>
 	<p style="font-color:#363636"><a a class="ex2" href="https://fontawesome.com/" >- FontAwesome</a></p>
+	<h3 style="font-color:#0F0F0F;">PHP admin tables :</h3>
+	<p style="font-color:#363636"><a a class="ex2" href="http://apcwebprog.csf.ph/notmydatabase/sql.php?server=2&db=webprogmi212&table=dmolarte2_news&pos=0" >- News Items Table</a></p>
+	<p style="font-color:#363636"><a a class="ex2" href="http://apcwebprog.csf.ph/notmydatabase/sql.php?db=webprogmi212&table=dmolarte2_MyGuestss&pos=0&server=2" >- Feedback Table</a></p>
+	
 	<h3 style="font-color:#0F0F0F;">Github Repository :</h3>
 	<p style="font-color:#363636"><a a class="ex2" href="https://github.com/Dmolarte2/lab3.git" >- Github File Repository</a></p>
 	<h3 style="font-color:#0F0F0F;">Images :</h3>
