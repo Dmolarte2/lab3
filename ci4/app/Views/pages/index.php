@@ -160,7 +160,7 @@ PI = PI + 10;   // This will also give an error
     <hr style="height:2px;border-width:0;width:200px;color:gray;background-color:#0F0F0F">
 
     <div>
-		<p ><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create"><i class="fa fa-pencil w3-hover-opacity w3-margin-right"></i> </a><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create" style="font-color:#363636" >Write Feedback</a></p>
+		<p ><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create"><i class="fa fa-pencil w3-hover-opacity w3-margin-right"></i> </a><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create" style="font-color:#363636" >Write a Feedback</a></p>
 		<p><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest"><i class="fa fa-eye w3-hover-opacity w3-margin-right"></i> </a> <a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest">View List of Feedback</a></p>
     </div><br>
     
