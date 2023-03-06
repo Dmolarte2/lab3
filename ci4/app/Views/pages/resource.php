@@ -35,15 +35,23 @@ a.ex3:hover, a.ex2:active {font-size: 110%;}
 	<h3 style="font-color:#0F0F0F;">HTML and CSS :</h3>
     <p style="font-color:#363636" ><a a class="ex2" href="https://www.w3schools.com/html/default.asp" > - W3Schools HTML Website </a></p>
 	<p style="font-color:#363636"><a a class="ex2" href="https://www.w3schools.com/css/" >- W3Schools CSS Website</a></p>
+	<h3 style="font-color:#0F0F0F;">JavaScript :</h3>
+    <p style="font-color:#363636" ><a a class="ex2" href="https://www.w3schools.com/js/default.asp" > - W3Schools JavaScript Website </a></p>
+	<h3 style="font-color:#0F0F0F;">SQL and PHP :</h3>
+    <p style="font-color:#363636" ><a a class="ex2" href="https://www.w3schools.com/sql/default.asp" > - W3Schools SQL Website </a></p>
+	<p style="font-color:#363636"><a a class="ex2" href="https://www.w3schools.com/php/default.asp" >- W3Schools PHP Website</a></p>
+	<h3 style="font-color:#0F0F0F;">CodeIgniter4 Tutorials :</h3>
+    <p style="font-color:#363636" ><a a class="ex2" href="https://codeigniter.com/user_guide/tutorial/news_section.html" > - News Section </a></p>
+	<p style="font-color:#363636"><a a class="ex2" href="https://codeigniter.com/user_guide/tutorial/create_news_items.html" >- News Items</a></p>
 	<h3 style="font-color:#0F0F0F;">Web Stylesheet :</h3>
     <p style="font-color:#363636"><a a class="ex2" href="https://fonts.googleapis.com/css?family=Montserrat" >- Googleapis</a></p>
 	<p style="font-color:#363636"><a a class="ex2" href="https://fontawesome.com/" >- FontAwesome</a></p>
 	<h3 style="font-color:#0F0F0F;">Github Repository :</h3>
-	<p style="font-color:#363636"><a a class="ex2" href="https://github.com/Dmolarte2/lab2/tree/main/week5/MyProfile" >- Github File Repository</a></p>
+	<p style="font-color:#363636"><a a class="ex2" href="https://github.com/Dmolarte2/lab3.git" >- Github File Repository</a></p>
 	<h3 style="font-color:#0F0F0F;">Images :</h3>
-	<p style="font-color:#363636"><a a class="ex2" href="https://github.com/Dmolarte2/lab2/tree/main/week5/MyProfile/images" >- Images Repository</a></p>
+	<p style="font-color:#363636"><a a class="ex2" href="https://github.com/Dmolarte2/lab3/tree/main/ci4/public/images" >- Images Repository</a></p>
 	<h3 style="font-color:#0F0F0F;">CSS :</h3>
-	<p style="font-color:#363636"><a a class="ex2" href="https://github.com/Dmolarte2/lab2/tree/main/week5/MyProfile/style" >- CSS Repository</a></p>
+	<p style="font-color:#363636"><a a class="ex2" href="https://github.com/Dmolarte2/lab3/tree/main/ci4/public/style" >- CSS Repository</a></p>
     
 	
     

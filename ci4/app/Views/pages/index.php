@@ -143,32 +143,27 @@ PI = PI + 10;   // This will also give an error
     
 
     <div class=" w3-content" id="contact">
+	
     <h2 style="font-color:#0F0F0F;">News Section</h2>
     <hr style="height:2px;border-width:0;width:200px;color:gray;background-color:#0F0F0F">
 
     <div>
-	
 		<p ><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news/create"><i class="fa fa-plus w3-hover-opacity w3-margin-right"></i> </a><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news/create" style="font-color:#363636" >Create News</a></p>
 		<p><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news"><i class="fa fa-book w3-hover-opacity w3-margin-right"></i> </a> <a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news">View News Archive</a></p>
-		
-    
     </div><br> 
 
   </div>
 
   <div class=" w3-content" id="contact" style= "margin-top:0px">
+  
     <h2 style="font-color:#0F0F0F;">Feedback to the website</h2>
     <hr style="height:2px;border-width:0;width:200px;color:gray;background-color:#0F0F0F">
 
     <div>
-	
 		<p ><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create"><i class="fa fa-pencil w3-hover-opacity w3-margin-right"></i> </a><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest/create" style="font-color:#363636" >Write Feedback</a></p>
-		<p><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest"><i class="fa fa-eye w3-hover-opacity w3-margin-right"></i> </a> <a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest">View Feedbacks</a></p>
-
-    
+		<p><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest"><i class="fa fa-eye w3-hover-opacity w3-margin-right"></i> </a> <a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/guest">View List of Feedback</a></p>
     </div><br>
     
-
   </div>
   
 

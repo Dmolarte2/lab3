@@ -26,18 +26,19 @@
 <form action="create" method="post">
     <?= csrf_field() ?>
 
-    <label for="title">Title</label>
+    <label for="title">Title: </label>
     <input style="margin-bottom:10px" type="input" name="title" value="<?= set_value('title') ?>">
     <br>
 
-    <label for="body">Text</label>
+    <label for="body">Text: </label>
     <textarea name="body" cols="45" rows="4"><?= set_value('body') ?></textarea>
     <br>
 
     <input style="margin-top:40px;margin-bottom:10px" type="submit" name="submit" value="Create news item">
 </form>
 
-<p style="font-color:#363636" ><a a class="ex2" href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news" > View News Archive </a></p>
+<hr style="height:2px;border-width:0;color:gray;background-color:#0F0F0F;width:200px;padding-top:15px">
+<p><a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news"><i class="fa fa-book w3-hover-opacity w3-margin-right"></i> </a> <a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/news">View News Archive</a></p>
 
 </body>
 </html>
