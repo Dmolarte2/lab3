@@ -55,6 +55,7 @@ PI = PI + 10;   // This will also give an error
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+	<a href="http://apcwebprog.csf.ph/~dmolarte2/lab3/ci4/public/resource" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
 
